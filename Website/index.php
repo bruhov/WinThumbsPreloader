@@ -112,7 +112,7 @@ include(__DIR__ . '/fileInfo.php');
 			<div class="footer">
 				<div>
 					<div class="copyright">Copyright © 2018 <a href="https://github.com/bruhov">Dmitry Bruhov</a></div>
-					<div class="license"><?=_('Distributed under')?> <a href="https://github.com/bruhov/WinThumbsPreloader/blob/master/LICENSE" target="_blank"><?=_('The MIT License')?></a></div>
+					<div class="license"><?=sprintf(_('Distributed under %sThe MIT License%s'), '<a href="https://github.com/bruhov/WinThumbsPreloader/blob/master/LICENSE" target="_blank">', '</a>')?></div>
 				</div>
 				<?php
 					$languages = [

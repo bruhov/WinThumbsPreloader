@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WinThumbsPreloader Website 1.0.0\n"
-"POT-Creation-Date: 2018-01-30 13:32+0500\n"
-"PO-Revision-Date: 2018-01-30 13:32+0500\n"
+"POT-Creation-Date: 2018-01-30 21:59+0500\n"
+"PO-Revision-Date: 2018-01-30 22:04+0500\n"
 "Last-Translator: \n"
 "Language-Team: Dmitry Bruhov (bruhov.com)\n"
 "Language: ru_RU\n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: index.php\n"
 
-#: index.php:67 index.php:80
+#: index.php:69 index.php:82
 msgid "Thumbnails preloader for Windows Explorer"
 msgstr "Предзагрузчик эскизов медиа-файлов для Windows Explorer"
 
-#: index.php:68
+#: index.php:70
 msgid ""
 "A tool that automatically preloads all thumbnails for a directory and "
 "(optionally) subdirectories in Windows Explorer with just one click."
@@ -28,40 +28,40 @@ msgstr ""
 "Программа для предзагрузки эскизов медиа-файлов в папке по клику мышки. "
 "Поддерживает вложенные папки."
 
-#: index.php:83
+#: index.php:85
 msgid "Download"
 msgstr "Скачать"
 
-#: index.php:85
+#: index.php:87
 msgid "Version"
 msgstr "Версия"
 
-#: index.php:85
+#: index.php:87
 msgid "changelog"
 msgstr "список изменений"
 
-#: index.php:86
+#: index.php:88
 msgid "Download count"
 msgstr "Кол-во скачиваний"
 
-#: index.php:87
+#: index.php:89
 msgid "Size"
 msgstr "Размер"
 
-#: index.php:87
+#: index.php:89
 #, php-format
 msgid "%d KB"
 msgstr "%d КБ"
 
-#: index.php:88
+#: index.php:90
 msgid "Platform"
 msgstr "Платформа"
 
-#: index.php:92
+#: index.php:94
 msgid "Source code"
 msgstr "Исходный код"
 
-#: index.php:100
+#: index.php:102
 msgid ""
 "<b>WinThumbsPreloader</b> is a simple open source tool for preloading "
 "thumbnails in Windows Explorer. Just right click on the folder to call the "
@@ -73,35 +73,32 @@ msgstr ""
 "мыше по интересующей папке для вызова контекстного меню и выберите "
 "<i>WinThumbsPreloader&nbsp;>&nbsp;Загрузить эскизы</i>."
 
-#: index.php:102
+#: index.php:104
 msgid "Key features"
 msgstr "Ключевые особенности"
 
-#: index.php:104
+#: index.php:106
 #, php-format
 msgid "Free, no advertisements, %sopen source%s"
 msgstr "Бесплатно, без рекламы, %sоткрытый исходный код%s"
 
-#: index.php:105
+#: index.php:107
 msgid "Preload thumbnails for entire folder and (optionally) it's subfolders"
 msgstr "Загрузка эскизов для всей папки и (опционально) вложенных папок"
 
-#: index.php:106
+#: index.php:108
 msgid "Integration with Windows Explorer"
 msgstr "Интеграция с проводником Windows"
 
-#: index.php:107
+#: index.php:109
 msgid "Command line interface"
 msgstr "Интерфейс коммандной строки"
 
-#: index.php:113
-msgid "Distributed under"
-msgstr "Распространяется под"
+#: index.php:115
+#, php-format
+msgid "Distributed under %sThe MIT License%s"
+msgstr "Распространяется под %sЛицензией MIT%s"
 
-#: index.php:113
-msgid "The MIT License"
-msgstr "Лицензией MIT"
-
-#: index.php:127
+#: index.php:129
 msgid "Site language"
 msgstr "Язык сайта"
