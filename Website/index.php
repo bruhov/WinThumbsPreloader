@@ -44,7 +44,7 @@ if ($userLanguage !== '' && !in_array($userLanguage, $supportedLanguages)) {
 
 //If language is not provided, detect it automatically and redirect user
 if ($userLanguage === '') {
-	$userLanguage = (http\Env::negotiateLanguage($supportedLanguages) ?? $supportedLanguages['en-US.UTF-8']);
+	$userLanguage = (http\Env::negotiateLanguage($supportedLanguages) ?? $supportedLanguages['en_US.utf8']);
 	header('Location: https://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/' . $userLanguage . '/');
 	exit;
 }
