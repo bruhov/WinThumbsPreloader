@@ -113,6 +113,7 @@ h1 {
 	left: 50%;
 	margin-left: -7px;
 	pointer-events: none;
+	z-index: 2;
 	opacity: 0;
 	transition: opacity 100ms ease;
 }
