@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WinThumbsPreloader Website 1.0.0\n"
+"POT-Creation-Date: 2018-01-30 13:32+0500\n"
+"PO-Revision-Date: 2018-01-30 13:32+0500\n"
+"Last-Translator: \n"
+"Language-Team: Dmitry Bruhov (bruhov.com)\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+#: index.php:67 index.php:80
+msgid "Thumbnails preloader for Windows Explorer"
+msgstr "Предзагрузчик эскизов медиа-файлов для Windows Explorer"
+
+#: index.php:68
+msgid ""
+"A tool that automatically preloads all thumbnails for a directory and "
+"(optionally) subdirectories in Windows Explorer with just one click."
+msgstr ""
+"Программа для предзагрузки эскизов медиа-файлов в папке по клику мышки. "
+"Поддерживает вложенные папки."
+
+#: index.php:83
+msgid "Download"
+msgstr "Скачать"
+
+#: index.php:85
+msgid "Version"
+msgstr "Версия"
+
+#: index.php:85
+msgid "changelog"
+msgstr "список изменений"
+
+#: index.php:86
+msgid "Download count"
+msgstr "Кол-во скачиваний"
+
+#: index.php:87
+msgid "Size"
+msgstr "Размер"
+
+#: index.php:87
+#, php-format
+msgid "%d KB"
+msgstr "%d КБ"
+
+#: index.php:88
+msgid "Platform"
+msgstr "Платформа"
+
+#: index.php:92
+msgid "Source code"
+msgstr "Исходный код"
+
+#: index.php:100
+msgid ""
+"<b>WinThumbsPreloader</b> is a simple open source tool for preloading "
+"thumbnails in Windows Explorer. Just right click on the folder to call the "
+"context menu and select <i>WinThumbsPreloader&nbsp;>&nbsp;Preload "
+"thumbnails</i> in the menu."
+msgstr ""
+"<b>WinThumbsPreloader</b> - это простая программа для предзагрузки эскизов "
+"медиа-файлов (фото или видео) в проводнике Windows. Кликните правой кнопкой "
+"мыше по интересующей папке для вызова контекстного меню и выберите "
+"<i>WinThumbsPreloader&nbsp;>&nbsp;Загрузить эскизы</i>."
+
+#: index.php:102
+msgid "Key features"
+msgstr "Ключевые особенности"
+
+#: index.php:104
+#, php-format
+msgid "Free, no advertisements, %sopen source%s"
+msgstr "Бесплатно, без рекламы, %sоткрытый исходный код%s"
+
+#: index.php:105
+msgid "Preload thumbnails for entire folder and (optionally) it's subfolders"
+msgstr "Загрузка эскизов для всей папки и (опционально) вложенных папок"
+
+#: index.php:106
+msgid "Integration with Windows Explorer"
+msgstr "Интеграция с проводником Windows"
+
+#: index.php:107
+msgid "Command line interface"
+msgstr "Интерфейс коммандной строки"
+
+#: index.php:113
+msgid "Distributed under"
+msgstr "Распространяется под"
+
+#: index.php:113
+msgid "The MIT License"
+msgstr "Лицензией MIT"
+
+#: index.php:127
+msgid "Site language"
+msgstr "Язык сайта"
