@@ -1,4 +1,4 @@
-#define MyAppName "WinThumbsPreloader"
+п»ї#define MyAppName "WinThumbsPreloader"
 #define MyAppReleaseDirectory "..\WinThumbsPreloader\WinThumbsPreloader\bin\Release"
 #define MyAppFilename MyAppName + ".exe"
 #define MyAppFilepath MyAppReleaseDirectory + "\" + MyAppFilename
@@ -50,17 +50,17 @@ Name: ru; MessagesFile: "compiler:Languages\Russian.isl"
 [CustomMessages]
 ; .Net installer
 en.NetFrameworkInstallerCaption=Installing .NET Framework 4.5.2. This might take a few minutes...
-ru.NetFrameworkInstallerCaption=Установка .NET Framework 4.5.2...
+ru.NetFrameworkInstallerCaption=РЈСЃС‚Р°РЅРѕРІРєР° .NET Framework 4.5.2...
 
 en.NetFrameworkInstallerFail=.NET installation failed with code
-ru.NetFrameworkInstallerFail=Ошибка установки .NET Framework. Код ошибки
+ru.NetFrameworkInstallerFail=РћС€РёР±РєР° СѓСЃС‚Р°РЅРѕРІРєРё .NET Framework. РљРѕРґ РѕС€РёР±РєРё
 
 ; Context menu items
 en.PreloadThumbnails=Preload thumbnails
-ru.PreloadThumbnails=Загрузить эскизы
+ru.PreloadThumbnails=Р—Р°РіСЂСѓР·РёС‚СЊ СЌСЃРєРёР·С‹
 
 en.PreloadThumbnailsRecursively=Preload thumbnails recursively
-ru.PreloadThumbnailsRecursively=Загрузить эскизы включая подпапки
+ru.PreloadThumbnailsRecursively=Р—Р°РіСЂСѓР·РёС‚СЊ СЌСЃРєРёР·С‹ РІРєР»СЋС‡Р°СЏ РїРѕРґРїР°РїРєРё
 
 [Files]
 Source: "{#MyAppFilepath}"; DestDir: "{app}"; Flags: ignoreversion
