@@ -9,20 +9,22 @@ error_reporting(E_ALL);
 if ($_SERVER['REMOTE_ADDR'] === $_SERVER['SERVER_ADDR'] && isset($_GET['update'])) {
 	//Download JSON
 	$curl = curl_init();
-	curl_setopt($curl, CURLOPT_URL, 'https://api.github.com/repos/bruhov/WinThumbsPreloader/releases/latest');
+	curl_setopt($curl, CURLOPT_URL, 'https://api.github.com/repos/bruhov/WinThumbsPreloader/releases');
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($curl, CURLOPT_USERAGENT, 'WinThumbsPreloaderWebsite');
 	$JSON = curl_exec($curl);
 	curl_close($curl);
 	//Parse
-	$release = json_decode($JSON);
-	if ($release === null || !isset($release->tag_name)) exit;
+	$releases = json_decode($JSON);
+	if ($releases === null || !isset($releases[0]->tag_name)) exit;
+	$latestRelease = $releases[0];
+	$setupFile = $latestRelease->assets[0];
 	$fileInfo = [];
-	$fileInfo['version'] = mb_substr($release->tag_name, 1);
-	$asset = $release->assets[0];
-	$fileInfo['URL'] = $asset->browser_download_url;
-	$fileInfo['downloadCount'] = $asset->download_count;
-	$fileInfo['size'] = $asset->size;
+	$fileInfo['version'] = mb_substr($latestRelease->tag_name, 1);
+	$fileInfo['URL'] = $setupFile->browser_download_url;
+	$fileInfo['size'] = $setupFile->size;
+	$fileInfo['downloadCount'] = 0;
+	foreach ($releases as $release) $fileInfo['downloadCount'] += $release->assets[0]->download_count;
 	//Save
 	file_put_contents(__DIR__ . '/fileInfo.php', '<? $fileInfo = ' . var_export($fileInfo, true) . ';');
 	exit;
