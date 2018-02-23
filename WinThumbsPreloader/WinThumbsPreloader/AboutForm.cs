@@ -39,6 +39,7 @@ namespace WinThumbsPreloader
             {
                 try
                 {
+                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                     using (WebClient client = new WebClient())
                     {
                         client.Headers.Add("User-Agent", "WinThumbPreloader");
