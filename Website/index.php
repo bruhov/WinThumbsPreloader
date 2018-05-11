@@ -97,7 +97,7 @@ include(__DIR__ . '/fileInfo.php');
 				</div>
 			</div>
 			<div class="screenshotContainer">
-				<video autoplay="autoplay" width="836" height="464" loop="loop" preload="auto">
+				<video autoplay="autoplay" width="836" height="464" loop="loop" preload="auto" muted>
 					<source src="../images/preview.mp4" type='video/mp4'>
 				</video>
 			</div>
