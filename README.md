@@ -1,6 +1,6 @@
 # WinThumbsPreloader
 Thumbnails preloader for Windows Explorer
 
-[![Screenshot](https://raw.githubusercontent.com/bruhov/WinThumbsPreloader/master/Website/images/preview.gif)](https://bruhov.com/WinThumbsPreloader/)
+![Screenshot](https://raw.githubusercontent.com/bruhov/WinThumbsPreloader/master/Website/images/preview.gif)
 
-### Check [bruhov.com/WinThumbsPreloader](https://bruhov.com/WinThumbsPreloader/) for more info.
+### Download: [WinThumbsPreloader-1.0.1-setup.exe](https://github.com/bruhov/WinThumbsPreloader/releases/download/v1.0.1/WinThumbsPreloader-1.0.1-setup.exe)
