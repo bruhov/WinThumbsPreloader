@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,6 +26,19 @@ namespace WinThumbsPreloader
             {
                 foreach (string item in GetItemsOnlyFirstLevel()) yield return item;
             }
+        }
+
+        public List<string> GetItemsBulk() {
+            List<string> items = new List<string>();
+            if (includeNestedDirectories)
+            {
+                foreach (string item in GetItemsNested()) items.Add(item);
+            }
+            else
+            {
+                foreach (string item in GetItemsOnlyFirstLevel()) items.Add(item);
+            }
+            return items;
         }
 
         private IEnumerable<string> GetItemsOnlyFirstLevel()
