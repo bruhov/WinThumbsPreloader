@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,21 +13,39 @@ namespace WinThumbsPreloader
         public bool includeNestedDirectories;
         public bool silentMode;
         public string path;
+        public bool multithreaded;
 
         public Options(string[] arguments)
         {
-            badArguments = (arguments.Length == 0 || arguments.Length > 2);
+            //Check if we have more arguments than we support
+            badArguments = (arguments.Length == 0 || arguments.Length > 4);
             if (badArguments) return;
 
-            bool optionsProvided = (arguments.Length == 2);
-            string rawOptions = (optionsProvided ? arguments[0] : "");
-            path = arguments[optionsProvided ? 1 : 0];
+            //Set default options
+            includeNestedDirectories = false;
+            silentMode = false;
+            multithreaded = false;
+            //Set the options the user wants from the arguments
+            foreach (string argu in arguments) {
+                switch (argu) {
+                    case "-r":
+                        includeNestedDirectories = true;
+                        break;
+                    case "-s":
+                        silentMode = true;
+                        break;
+                    case "-m":
+                        multithreaded = true;
+                        break;
+                    default:
+                        path = argu;
+                        break;
+                }
+            }
 
+            //Check if the path we grabbed is real
             badArguments = !Directory.Exists(path);
             if (badArguments) return;
-
-            includeNestedDirectories = rawOptions.Contains("r");
-            silentMode = rawOptions.Contains("s");
         }
     }
 }
