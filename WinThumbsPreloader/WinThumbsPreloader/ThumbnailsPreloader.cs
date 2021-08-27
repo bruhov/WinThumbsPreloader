@@ -1,8 +1,9 @@
-﻿using System;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
 using System.IO;
 using WinThumbsPreloader.Properties;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace WinThumbsPreloader
 {
@@ -22,13 +23,15 @@ namespace WinThumbsPreloader
         private ProgressDialog progressDialog;
         private Timer progressDialogUpdateTimer;
 
+        protected bool _multiThreaded;
+
         public ThumbnailsPreloaderState state = ThumbnailsPreloaderState.GettingNumberOfItems;
         public ThumbnailsPreloaderState prevState = ThumbnailsPreloaderState.New;
         public int totalItemsCount = 0;
         public int processedItemsCount = 0;
         public string currentFile = "";
 
-        public ThumbnailsPreloader(string path, bool includeNestedDirectories, bool silentMode)
+        public ThumbnailsPreloader(string path, bool includeNestedDirectories, bool silentMode, bool multiThreaded)
         {
             directoryScanner = new DirectoryScanner(path, includeNestedDirectories);
             if (!silentMode)
@@ -36,6 +39,7 @@ namespace WinThumbsPreloader
                 InitProgressDialog();
                 InitProgressDialogUpdateTimer();
             }
+            _multiThreaded = multiThreaded;
             Run();
         }
 
@@ -112,14 +116,32 @@ namespace WinThumbsPreloader
                 //Start processing
                 state = ThumbnailsPreloaderState.Processing;
                 ThumbnailPreloader thumbnailPreloader = new ThumbnailPreloader();
-                foreach (string item in directoryScanner.GetItems())
+                //Get the items first before doing work
+                List<string> items = directoryScanner.GetItemsBulk();
+                if (!_multiThreaded)
                 {
-                    currentFile = item;
-                    thumbnailPreloader.PreloadThumbnail(item);
-                    processedItemsCount++;
-                    if (processedItemsCount == totalItemsCount) state = ThumbnailsPreloaderState.Done;
-                    if (state == ThumbnailsPreloaderState.Canceled) return;
+                    foreach (string item in items)
+                    {
+                        currentFile = item;
+                        thumbnailPreloader.PreloadThumbnail(item);
+                        processedItemsCount++;
+                        if (processedItemsCount == totalItemsCount) state = ThumbnailsPreloaderState.Done;
+                        if (state == ThumbnailsPreloaderState.Canceled) return;
+                    }
                 }
+                else {
+                    Parallel.ForEach(
+                        items,
+                        new ParallelOptions { MaxDegreeOfParallelism = 2048 },
+                        item =>
+                        {
+                            currentFile = item;
+                            thumbnailPreloader.PreloadThumbnail(item);
+                            processedItemsCount++;
+                            if (processedItemsCount == totalItemsCount) state = ThumbnailsPreloaderState.Done;
+                            if (state == ThumbnailsPreloaderState.Canceled) return;
+                        });
+                }       
             });
             Application.Exit();
         }

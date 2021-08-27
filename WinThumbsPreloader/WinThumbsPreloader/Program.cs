@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Windows.Forms;
 
@@ -29,7 +29,7 @@ namespace WinThumbsPreloader
             }
             else
             {
-                new ThumbnailsPreloader(options.path, options.includeNestedDirectories, options.silentMode);
+                new ThumbnailsPreloader(options.path, options.includeNestedDirectories, options.silentMode, options.multithreaded);
                 Application.Run();
             }
         }
