@@ -1,10 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
-using WinThumbsPreloader.Properties;
-
-namespace WinThumbsPreloader
+﻿namespace WinThumbsPreloader
 {
     public enum ThumbnailsPreloaderState
     {

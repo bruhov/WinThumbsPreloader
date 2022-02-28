@@ -1,0 +1,15 @@
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\WinThumbsPreloader.exe.config
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\WinThumbsPreloader.exe
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\WinThumbsPreloader.pdb
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\ru\WinThumbsPreloader.resources.dll
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.csproj.AssemblyReference.cache
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.csproj.SuggestedBindingRedirects.cache
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.AboutForm.resources
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.Properties.Resources.resources
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.AboutForm.ru.resources
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.Properties.Resources.ru.resources
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.csproj.GenerateResource.cache
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.csproj.CoreCompileInputs.cache
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\ru\WinThumbsPreloader.resources.dll
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.exe
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\WinThumbsPreloader.pdb
