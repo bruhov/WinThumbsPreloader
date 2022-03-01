@@ -13,7 +13,7 @@ namespace WinThumbsPreloader
             folderBrowserDialog1.ShowDialog();
             string folderName = folderBrowserDialog1.SelectedPath;
 
-            string lastFolderName = Path.GetFileName(Path.GetDirectoryName(folderName));
+            string lastFolderName = Path.GetFullPath(folderName);
             listBox1.Items.Add(lastFolderName);
         }
     }

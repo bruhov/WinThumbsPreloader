@@ -2,7 +2,6 @@ J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\net6.0
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\net6.0-windows\WinThumbsPreloader.deps.json
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\net6.0-windows\WinThumbsPreloader.runtimeconfig.json
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\net6.0-windows\WinThumbsPreloader.dll
-J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\net6.0-windows\WinThumbsPreloader.pdb
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\bin\Debug\net6.0-windows\ru\WinThumbsPreloader.resources.dll
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.csproj.AssemblyReference.cache
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.AboutForm.resources
@@ -15,7 +14,6 @@ J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\ru\WinThumbsPreloader.resources.dll
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.dll
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\refint\WinThumbsPreloader.dll
-J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.pdb
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.genruntimeconfig.cache
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\ref\WinThumbsPreloader.dll
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.DirectorySelectionForm.resources

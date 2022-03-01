@@ -30,9 +30,10 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.AppNameLabel = new System.Windows.Forms.Label();
-            this.selectDir = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.selectDir = new System.Windows.Forms.Button();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,20 +69,6 @@
             this.AppNameLabel.TabIndex = 7;
             this.AppNameLabel.Text = "WinThumbsPreloader";
             // 
-            // selectDir
-            // 
-            this.selectDir.AutoSize = true;
-            this.selectDir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.selectDir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.selectDir.Font = new System.Drawing.Font("Hack Nerd Font Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.selectDir.Location = new System.Drawing.Point(3, 416);
-            this.selectDir.Name = "selectDir";
-            this.selectDir.Size = new System.Drawing.Size(794, 25);
-            this.selectDir.TabIndex = 8;
-            this.selectDir.Text = "Select Directory";
-            this.selectDir.UseVisualStyleBackColor = true;
-            this.selectDir.Click += new System.EventHandler(this.selectDir_Click);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.No;
@@ -104,6 +91,20 @@
             this.listBox1.Size = new System.Drawing.Size(794, 205);
             this.listBox1.TabIndex = 10;
             // 
+            // selectDir
+            // 
+            this.selectDir.AutoSize = true;
+            this.selectDir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.selectDir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.selectDir.Font = new System.Drawing.Font("Hack Nerd Font Mono", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.selectDir.Location = new System.Drawing.Point(3, 416);
+            this.selectDir.Name = "selectDir";
+            this.selectDir.Size = new System.Drawing.Size(794, 25);
+            this.selectDir.TabIndex = 8;
+            this.selectDir.Text = "Select Directory";
+            this.selectDir.UseVisualStyleBackColor = true;
+            this.selectDir.Click += new System.EventHandler(this.selectDir_Click);
+            // 
             // DirectorySelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -124,8 +125,8 @@
         private Label AppNameLabel;
         private Button selectDir;
         private RichTextBox richTextBox1;
-        private FolderBrowserDialog folderBrowserDialog1;
         private OpenFileDialog openFileDialog1;
         private ListBox listBox1;
+        private FolderBrowserDialog folderBrowserDialog1;
     }
 }
