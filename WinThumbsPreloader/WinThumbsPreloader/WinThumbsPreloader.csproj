@@ -27,9 +27,6 @@
     <AnalysisLevel>preview</AnalysisLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="AboutForm - Copy.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="ProgressDialog.cs">
       <SubType>Component</SubType>
     </Compile>

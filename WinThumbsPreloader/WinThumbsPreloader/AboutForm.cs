@@ -89,9 +89,11 @@ namespace WinThumbsPreloader
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            var dirwindowForm = new Form();
-            dirwindowForm.Show();
-           
+            DirectorySelectionForm newForm = new DirectorySelectionForm();
+            this.Hide();
+            newForm.ShowDialog();
+            this.Show();
+
 
 
         }

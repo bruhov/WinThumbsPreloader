@@ -18,3 +18,4 @@ J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.pdb
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.genruntimeconfig.cache
 J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\ref\WinThumbsPreloader.dll
+J:\Projects\winthumbsfork\WinThumbsPreloader\WinThumbsPreloader\obj\Debug\net6.0-windows\WinThumbsPreloader.DirectorySelectionForm.resources

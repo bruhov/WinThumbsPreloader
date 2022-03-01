@@ -6,3 +6,4 @@ global using System.Threading.Tasks;
 global using System.Windows.Forms;
 global using System.Runtime.InteropServices;
 global using WinThumbsPreloader.Properties;
+global using System.Drawing;
