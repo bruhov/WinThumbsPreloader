@@ -16,18 +16,26 @@ namespace WinThumbsPreloader
 
         public Options(string[] arguments)
         {
-            badArguments = (arguments.Length == 0 || arguments.Length > 2);
-            if (badArguments) return;
+            foreach (var arg in arguments)
+            {
+                switch (arg)
+                {
+                    case "-r":
+                        includeNestedDirectories = true;
+                        break;
 
-            bool optionsProvided = (arguments.Length == 2);
-            string rawOptions = (optionsProvided ? arguments[0] : "");
-            path = arguments[optionsProvided ? 1 : 0];
+                    case "-s":
+                        silentMode = true;
+                        break;
+
+                    default:
+                        path = arg;
+                        continue;
+                }
+            }
 
             badArguments = !Directory.Exists(path);
             if (badArguments) return;
-
-            includeNestedDirectories = rawOptions.Contains("r");
-            silentMode = rawOptions.Contains("s");
         }
     }
 }

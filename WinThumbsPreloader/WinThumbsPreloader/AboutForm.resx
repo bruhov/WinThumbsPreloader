@@ -249,6 +249,66 @@
   <data name="&gt;&gt;BorderTop.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;AppIconPictureBox.Name" xml:space="preserve">
+    <value>AppIconPictureBox</value>
+  </data>
+  <data name="&gt;&gt;AppIconPictureBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AppIconPictureBox.Parent" xml:space="preserve">
+    <value>HeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;AppIconPictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;UpdateLabel.Name" xml:space="preserve">
+    <value>UpdateLabel</value>
+  </data>
+  <data name="&gt;&gt;UpdateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpdateLabel.Parent" xml:space="preserve">
+    <value>HeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;UpdateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;AppNameLabel.Name" xml:space="preserve">
+    <value>AppNameLabel</value>
+  </data>
+  <data name="&gt;&gt;AppNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AppNameLabel.Parent" xml:space="preserve">
+    <value>HeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;AppNameLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="HeaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="HeaderPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="HeaderPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 68</value>
+  </data>
+  <data name="HeaderPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;HeaderPanel.Name" xml:space="preserve">
+    <value>HeaderPanel</value>
+  </data>
+  <data name="&gt;&gt;HeaderPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HeaderPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;HeaderPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="AppIconPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 10</value>
   </data>
@@ -327,30 +387,6 @@
   <data name="&gt;&gt;AppNameLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="HeaderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="HeaderPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="HeaderPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 68</value>
-  </data>
-  <data name="HeaderPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;HeaderPanel.Name" xml:space="preserve">
-    <value>HeaderPanel</value>
-  </data>
-  <data name="&gt;&gt;HeaderPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HeaderPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;HeaderPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="RichTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -371,7 +407,7 @@
 
 Also you can launch the app from command line:
 Usage:
-    WinThumbsPreloader.exe [-r] &lt;path&gt;
+    WinThumbsPreloader.exe [-r -s] &lt;path&gt;
 Options:
     -r Recursively preload thumbnails in nested folders.
     -s Silent mode - don't show a progress dialog.
@@ -380,7 +416,7 @@ Options:
 Website: https://bruhov.com/WinThumbsPreloader
 Project page: https://github.com/bruhov/WinThumbsPreloader
 
-Copyright (c) 2018 Dmitry Bruhov</value>
+Copyright (c) 2022 Dmitry Bruhov</value>
   </data>
   <data name="&gt;&gt;RichTextBox.Name" xml:space="preserve">
     <value>RichTextBox</value>

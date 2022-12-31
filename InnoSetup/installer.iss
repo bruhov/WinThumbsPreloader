@@ -1,4 +1,6 @@
-﻿#define MyAppName "WinThumbsPreloader"
+﻿#pragma include __INCLUDE__ + ";" + ReadReg(HKLM, "Software\Mitrich Software\Inno Download Plugin", "InstallDir")
+
+#define MyAppName "WinThumbsPreloader"
 #define MyAppReleaseDirectory "..\WinThumbsPreloader\WinThumbsPreloader\bin\Release"
 #define MyAppFilename MyAppName + ".exe"
 #define MyAppFilepath MyAppReleaseDirectory + "\" + MyAppFilename
@@ -12,7 +14,7 @@
 #include <idplang\Russian.iss> 
 
 [Setup]
-AppCopyright=Copyright (c) 2018 {#MyAppPublisher}
+AppCopyright=Copyright (c) 2022 {#MyAppPublisher}
 AppId={#MyAppId}
 AppMutex={#MyAppId}
 AppName={#MyAppName}
@@ -49,8 +51,8 @@ Name: ru; MessagesFile: "compiler:Languages\Russian.isl"
 
 [CustomMessages]
 ; .Net installer
-en.NetFrameworkInstallerCaption=Installing .NET Framework 4.5.2. This might take a few minutes...
-ru.NetFrameworkInstallerCaption=Установка .NET Framework 4.5.2...
+en.NetFrameworkInstallerCaption=Installing .NET Framework 4.8. This might take a few minutes...
+ru.NetFrameworkInstallerCaption=Установка .NET Framework 4.8...
 
 en.NetFrameworkInstallerFail=.NET installation failed with code
 ru.NetFrameworkInstallerFail=Ошибка установки .NET Framework. Код ошибки
@@ -88,7 +90,7 @@ Root: "HKCR"; Subkey: "Directory\shell\{#MyAppName}\Shell\PreloadRecursively"; V
 Root: "HKCR"; Subkey: "Directory\shell\{#MyAppName}\Shell\PreloadRecursively\command"; ValueType: string; ValueData: """{app}\{#MyAppFilename}"" -r ""%1"""
 
 [Code]
-function Framework45IsNotInstalled(): Boolean;
+function Framework48IsNotInstalled(): Boolean;
 var
   bSuccess: Boolean;
   regVersion: Cardinal;
@@ -96,16 +98,16 @@ begin
   Result := True;
 
   bSuccess := RegQueryDWordValue(HKLM, 'Software\Microsoft\NET Framework Setup\NDP\v4\Full', 'Release', regVersion);
-  if (True = bSuccess) and (regVersion >= 378389) then begin
+  if (True = bSuccess) and (regVersion >= 528040) then begin
     Result := False;
   end;
 end;
 
 procedure InitializeWizard;
 begin
-  if Framework45IsNotInstalled() then
+  if Framework48IsNotInstalled() then
   begin
-    idpAddFile('http://go.microsoft.com/fwlink/?LinkId=397707', ExpandConstant('{tmp}\NetFrameworkInstaller.exe'));
+    idpAddFile('http://go.microsoft.com/fwlink/?LinkId=2085155', ExpandConstant('{tmp}\NetFrameworkInstaller.exe'));
     idpDownloadAfter(wpReady);
   end;
 end;
@@ -136,7 +138,7 @@ begin
   case CurStep of
     ssPostInstall:
       begin
-        if Framework45IsNotInstalled() then
+        if Framework48IsNotInstalled() then
         begin
           InstallFramework();
         end;
