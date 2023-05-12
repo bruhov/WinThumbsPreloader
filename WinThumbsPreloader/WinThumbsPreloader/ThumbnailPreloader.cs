@@ -1,8 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices;
-using System.Windows.Forms;
-
-namespace WinThumbsPreloader
+﻿namespace WinThumbsPreloader
 {
     //Preload one thumbnail
     class ThumbnailPreloader

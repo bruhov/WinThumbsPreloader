@@ -1,13 +1,8 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using WinThumbsPreloader.Properties;
 
 namespace WinThumbsPreloader
 {
@@ -90,6 +85,17 @@ namespace WinThumbsPreloader
         private void UpdateLabel_Click(object sender, EventArgs e)
         {
             if (UpdateLabel.Text == Resources.AboutForm_WinThumbsPreloader_NewVersionAvailable) Process.Start("https://bruhov.com/WinThumbsPreloader");
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            DirectorySelectionForm newForm = new DirectorySelectionForm();
+            this.Hide();
+            newForm.ShowDialog();
+            this.Show();
+
+
+
         }
     }
 }
